@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from "./Components/Nav";
+import Section from "./Components/Section";
+import Footer from "./Components/Footer";
+import Main from "./Components/Main";
+import Busqueda from "./Components/Busqueda";
+import Container from '@mui/material/Container';
+import { useState } from "react";
 
-function App() {
+const App = ()=>{
+  
+  const [busqueda, setBusqueda] = useState ("")
+
+  const handleChange = (e)=>{
+      setBusqueda(e.target.value)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container sx={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+        <Nav/>
+        <Section/>
+        <Busqueda
+        handleChange={handleChange}/>
+        <Main busqueda={busqueda}/>
+        <Footer/>
+    </Container>
+  )
 }
 
 export default App;
