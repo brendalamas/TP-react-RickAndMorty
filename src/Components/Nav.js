@@ -18,7 +18,7 @@ const Nav = ()=>{
 
                 <Box sx={{ display:"flex", justifyContent:"space-between"}} >
                     <Button>
-                        <img width={120} src="https://admiring-keller-046d5a.netlify.app/static/media/logo.9baa90dc.png"/>
+                        <img alt="imagen rick"width={120} src="https://admiring-keller-046d5a.netlify.app/static/media/logo.9baa90dc.png"/>
                     </Button>
                     <Box>
                         <Button  sx={{color:"#33FFC4", fontWeight:"bold"}}> <Link to="/"> Principal </Link></Button >
