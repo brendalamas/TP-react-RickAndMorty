@@ -20,6 +20,7 @@ const Personajes = ({busqueda})=>{
         .then(data => {
             setCharacter(data.results);
             console.log(data.results);
+            console.log(data);
         })
     }, [busqueda])
 
@@ -35,15 +36,16 @@ const Personajes = ({busqueda})=>{
                 {characters.map((character)=>(
                     <Link to={`/personajes/${character.id}`}>
                     <Grid item>
-                        <CardActionArea sx={{width:300}}>
-                            <Card>
+                        <CardActionArea sx={{width:300, m:2}}>
+                            <Card sx={{m:2, bgcolor:"#000000", color:"#24ffb8"}}> 
                                 <CardMedia 
                                     component="img"
                                     height="250"
                                     image={character.image}
                                     alt={character.name}
+                                    sx={{borderRadius:0}}
                                 />
-                                <Typography sx={{textAlign:"center", mb:2, fontWeight:"bold"}} variant="h5">  {character.name} </Typography>
+                                <Typography sx={{textAlign:"center", mb:2,mt:2, fontWeight:"bold"}} variant="h5">  {character.name} </Typography>
                                 <CardContent sx={{display:"flex", flexDirection:"column"}}>
                                     <Typography sx={{m:0.5}} variant="subtitle">GENERO: {character.gender} </Typography>
                                     <Typography sx={{m:0.5}} variant="subtitle"> ESTADO: {character.status} </Typography>
@@ -62,32 +64,3 @@ const Personajes = ({busqueda})=>{
 }
 
 export default Personajes;
-
-// import { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-// import "./Personajes.css";
-
-// const Personajes = () =>{
-
-//     const [personajes, setPersonajes] = useState([]);
-
-//     useEffect(()=>{
-//         fetch("https://rickandmortyapi.com/api/character")
-//         .then(res => res.json())
-//         .then(data => setPersonajes(data.results))
-//     }, [])
-
-//     return (
-//         <div className="card-contenedor"> 
-//             {personajes.map(personaje => (
-//                 <Link className="card-personaje" to={`/personajes/${personaje.id}`}> 
-//                     <h2>{personaje.name}</h2>
-//                     <img src={personaje.image}/>
-//                 </Link>
-            
-//             ))}
-//         </div>
-//     )
-// }
-
-// export default Personajes;
