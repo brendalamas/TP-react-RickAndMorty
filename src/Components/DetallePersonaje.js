@@ -28,7 +28,7 @@ const DetallePersonaje = ()=>{
         sx={{display:"flex", justifyContent:"center", mt:3, mb:3}}>
             <Card 
             sx={{display:"flex", justifyContent:"space-around", 
-            width:400, height:150, bgcolor:"#000000", p:2}}>
+            width:400, height:150, bgcolor:"#B5B7B9", p:2}}>
 
             <CardMedia
             component="img"
@@ -39,9 +39,9 @@ const DetallePersonaje = ()=>{
 
 
             <Box sx={{mt:2}}>
-                <Typography variant="h5" fontWeight="bold" color="#24FFB8" sx={{mb:2}}>{detalle.name} </Typography>
+                <Typography variant="h5" fontWeight="bold" color="#ffffff" sx={{mb:2}}>{detalle.name} </Typography>
 
-                <Typography variant="subtitle2" fontWeight="bold" color="#24FFB8"> 
+                <Typography variant="subtitle2" fontWeight="bold" color="#ffffff"> 
                     Genero: {detalle.gender} 
                 </Typography>
 
@@ -60,7 +60,7 @@ const DetallePersonaje = ()=>{
                     Estado: {detalle.status} 
                 </Typography>} 
 
-                <Typography variant="subtitle2"fontWeight="bold" color="#24FFB8"> 
+                <Typography variant="subtitle2"fontWeight="bold" color="#ffffff"> 
                     Especie: {detalle.species} 
                 </Typography>
             </Box>

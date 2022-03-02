@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
+import Grid from '@mui/material/Grid';
+import { CardActionArea } from '@mui/material';
 
 const Ubicaciones = ()=>{
 
@@ -20,34 +22,36 @@ const Ubicaciones = ()=>{
 
     return (
         <Container sx={{display:"flex", justifyContent:"center"}}>
-            <Box sx={{
-                bgcolor:"#000000",color:"#2BD7A5", 
-                borderRadius:2, width:1055, 
-                display:"flex", justifyContent:"center", flexWrap:"wrap",
-                p:2, mb:3}}
-            >
+            <Grid container 
+                spacing={2}
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                sx={{mt:3, bgcolor:"#B5B7B9", borderRadius:2, ml:0, mb:4, p:2}}>
+
                 {ubicaciones.map(ubicacion => (
-                    <Box item sx={{
-                        display:"flex", flexDirection:"column", alignItems:"center", 
-                        m:2, borderRadius:6, border: "1px solid #2BD7A5"}}>
-                            <CardMedia
-                            component="img"
-                            height="150"
-                            alt="imagen sobre las ubicaciones"
-                            image="https://admiring-keller-046d5a.netlify.app/static/media/01.f47ff45c.png"/>
-                            
+                    <Grid item>
+                    <CardActionArea sx={{width:250, m:2}}>
+                        <Card sx={{m:2, bgcolor:"#B5B7B9", color:"#ffffff", borderRadius:6, border: "1px solid #B5B7B9"}}> 
+                            <CardMedia 
+                                component="img"
+                                height="130"
+                                alt="imagen sobre las ubicaciones"
+                                image="https://admiring-keller-046d5a.netlify.app/static/media/01.f47ff45c.png"
+                                sx={{borderRadius:0}}
+                            />
                             <CardContent sx={{display:"flex", flexDirection:"column", alignItems:"center"}}>
                                 <Typography variant="h5" fontWeight="bold">{ubicacion.name} </Typography>
                                 <Typography variant="subtitle2" fontWeight="bold"> {ubicacion.dimension}</Typography>
                                 <Typography variant="subtitle2" fontWeight="bold"> {ubicacion.created}</Typography>
                                 <Typography variant="subtitle2" fontWeight="bold"> {ubicacion.type}</Typography>
                             </CardContent>
-                        
-                    </Box>
+                        </Card>
+                    </CardActionArea>                                             
+                </Grid>
                     
                 ))}
-            </Box>
-
+            </Grid>
         </Container>
                 
     )

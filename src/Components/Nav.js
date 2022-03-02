@@ -6,16 +6,16 @@ import Container from '@mui/material/Container';
 
 const Nav = ()=>{
     return (
-        <Container sx={{bgcolor:"#000000",borderRadius:2, mt:3, p:1}}>
+        <Container sx={{bgcolor:"#B5B7B9",borderRadius:2, mt:3, p:1}}>
             <Box sx={{ display:"flex", justifyContent:"space-between"}} >
                 <Button>
                     <img alt="imagen rick"width={120} src="https://admiring-keller-046d5a.netlify.app/static/media/logo.9baa90dc.png"/>
                 </Button>
                 <Box>
-                    <Button  sx={{color:"#33FFC4", fontWeight:"bold"}}> <Link to="/"> Principal</Link></Button >
-                    <Button  sx={{color:"#33FFC4", fontWeight:"bold"}}> <Link to="/personajes"> Personajes </Link></Button >
-                    <Button  sx={{color:"#33FFC4", fontWeight:"bold"}}> <Link to="/ubicaciones"> Ubicaciones </Link></Button >
-                    <Button  sx={{color:"#33FFC4", fontWeight:"bold"}}> <Link to="/episodios"> Episodios </Link></Button >
+                    <Button> <Link to="/"> Principal</Link></Button >
+                    <Button> <Link to="/personajes"> Personajes </Link></Button >
+                    <Button> <Link to="/ubicaciones"> Ubicaciones </Link></Button >
+                    <Button> <Link to="/episodios"> Episodios </Link></Button >
                 </Box>                    
             </Box>
         </Container>

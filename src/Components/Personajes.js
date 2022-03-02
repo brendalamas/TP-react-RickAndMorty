@@ -31,13 +31,13 @@ const Personajes = ({busqueda})=>{
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
-                sx={{mt:3, bgcolor:"#000000", borderRadius:2, width:1055, ml:0, mb:4, p:2}}
+                sx={{mt:3, bgcolor:"#B5B7B9", borderRadius:2, ml:0, mb:4, p:2}}
                 >
                 {characters.map((character)=>(
                     <Link to={`/personajes/${character.id}`}>
                     <Grid item>
                         <CardActionArea sx={{width:300, m:2}}>
-                            <Card sx={{m:2, bgcolor:"#000000", color:"#24ffb8", borderRadius:6, border: "1px solid #2BD7A5"}}> 
+                            <Card sx={{m:2, bgcolor:"#B5B7B9", color:"#ffffff", borderRadius:6, border: "1px solid #B5B7B9"}}> 
                                 <CardMedia 
                                     component="img"
                                     height="250"

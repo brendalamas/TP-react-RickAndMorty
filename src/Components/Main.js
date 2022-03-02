@@ -7,7 +7,7 @@ import "./Main.css"
 const Main = ()=>{
     return (
         <Container>
-        <Paper sx={{display:"flex", justifyContent:"center", borderRadius:2, bgcolor:"#000000", mb:5, p:1}} elevation={3}>
+        <Paper sx={{display:"flex", justifyContent:"center", borderRadius:2, bgcolor:"#B5B7B9", mb:5, p:1}} elevation={3}>
             <CardMedia
             component="img"
             height="800"

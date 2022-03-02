@@ -10,8 +10,8 @@ const Footer =()=>{
     return (
         <Container
         sx={{
-            color:"#33FFC4", 
-            bgcolor:"#000000",
+            color:"#FFFFFF", 
+            bgcolor:"#B5B7B9",
             borderRadius:2,
             display:"flex",
             justifyContent:"space-around",
@@ -24,15 +24,15 @@ const Footer =()=>{
 
             <Box sx={{display:"flex"}}>
 
-                <Link color="#33FFC4" href="https://github.com/brendalamas" underline="none" sx={{m:2}}> 
+                <Link color="#FFFFFF" href="https://github.com/brendalamas" underline="none" sx={{m:2}}> 
                     <GitHubIcon sx={{fontSize:35}}/> 
                 </Link>
 
-                <Link color="#33FFC4" href="https://www.linkedin.com/in/brenda-lamas-597b79145/" underline="none" sx={{m:2}}> 
+                <Link color="#FFFFFF" href="https://www.linkedin.com/in/brenda-lamas-597b79145/" underline="none" sx={{m:2}}> 
                     <LinkedInIcon sx={{fontSize:35}}/>
                 </Link>
 
-                <Link color="#33FFC4" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" underline="none" sx={{m:2}}> 
+                <Link color="#FFFFFF" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" underline="none" sx={{m:2}}> 
                     <EmailIcon sx={{fontSize:35}}/> 
                 </Link>
 

@@ -4,7 +4,7 @@ import CardMedia from '@mui/material/CardMedia';
 
 const Section = ()=>{
     return (
-        <Container sx={{bgcolor:"#000000", borderRadius:2, mt:3, p:1}}>
+        <Container sx={{bgcolor:"#B5B7B9", borderRadius:2, mt:3, p:1}}>
             <CardMedia
             component="img"
             height="200"
