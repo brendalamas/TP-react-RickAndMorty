@@ -35,7 +35,7 @@ const Personajes = ({busqueda})=>{
                 >
                 {characters.map((character)=>(
                     <Link to={`/personajes/${character.id}`}>
-                    <Grid item>
+                    <Grid item key={character.id}>
                         <CardActionArea sx={{width:300, m:2}}>
                             <Card sx={{m:2, bgcolor:"#B5B7B9", color:"#ffffff", borderRadius:6, border: "1px solid #B5B7B9"}}> 
                                 <CardMedia 

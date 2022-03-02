@@ -30,7 +30,7 @@ const Episodios = ()=>{
                 sx={{mt:3, bgcolor:"#B5B7B9", borderRadius:2, ml:0, mb:4, p:2}}>
 
                 {episodios.map(episodio => (
-                    <Grid item>
+                    <Grid item key={episodio.id}>
                         <CardActionArea sx={{width:300, m:2}}>
                             <Card sx={{m:2, bgcolor:"#B5B7B9", color:"#ffffff", borderRadius:6, border: "1px solid #B5B7B9"}}> 
                                 <CardMedia 
