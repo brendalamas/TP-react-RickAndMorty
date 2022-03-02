@@ -37,7 +37,7 @@ const Personajes = ({busqueda})=>{
                     <Link to={`/personajes/${character.id}`}>
                     <Grid item>
                         <CardActionArea sx={{width:300, m:2}}>
-                            <Card sx={{m:2, bgcolor:"#000000", color:"#24ffb8"}}> 
+                            <Card sx={{m:2, bgcolor:"#000000", color:"#24ffb8", borderRadius:6, border: "1px solid #2BD7A5"}}> 
                                 <CardMedia 
                                     component="img"
                                     height="250"
@@ -45,11 +45,9 @@ const Personajes = ({busqueda})=>{
                                     alt={character.name}
                                     sx={{borderRadius:0}}
                                 />
-                                <Typography sx={{textAlign:"center", mb:2,mt:2, fontWeight:"bold"}} variant="h5">  {character.name} </Typography>
-                                <CardContent sx={{display:"flex", flexDirection:"column"}}>
-                                    <Typography sx={{m:0.5}} variant="subtitle">GENERO: {character.gender} </Typography>
-                                    <Typography sx={{m:0.5}} variant="subtitle"> ESTADO: {character.status} </Typography>
-                                    <Typography sx={{m:0.5}} variant="subtitle">ORIGEN: {character.origin.name} </Typography>
+                                <Typography sx={{textAlign:"center",mt:2, fontWeight:"bold"}} variant="h5">  {character.name} </Typography>
+                                <CardContent sx={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+                                    <Typography variant="subtitle">{character.species} </Typography>
                                 </CardContent>
                             </Card>
                         </CardActionArea>                                             
