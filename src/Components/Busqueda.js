@@ -2,7 +2,6 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 
 const Busqueda = ({handleChange})=>{
-
     return (
         <FormControl sx={{
             display:"flex", flexDirection:"row", 

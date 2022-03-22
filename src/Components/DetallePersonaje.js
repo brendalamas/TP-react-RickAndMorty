@@ -25,7 +25,7 @@ const DetallePersonaje = ()=>{
 
     return (
         <Container 
-        sx={{display:"flex", justifyContent:"center", mt:3, mb:3}}>
+        sx={{display:"flex", justifyContent:"center", mt:18,mb:18}}>
             <Card 
             sx={{display:"flex", justifyContent:"space-around", 
             width:400, height:150, bgcolor:"#B5B7B9", p:2}}>

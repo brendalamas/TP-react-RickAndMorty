@@ -12,10 +12,10 @@ const Nav = ()=>{
                     <img alt="imagen rick"width={120} src="https://admiring-keller-046d5a.netlify.app/static/media/logo.9baa90dc.png"/>
                 </Button>
                 <Box>
-                    <Button> <Link to="/"> Principal</Link></Button >
-                    <Button> <Link to="/personajes"> Personajes </Link></Button >
-                    <Button> <Link to="/ubicaciones"> Ubicaciones </Link></Button >
-                    <Button> <Link to="/episodios"> Episodios </Link></Button >
+                    <Button> <Link to="/" style={{textDecoration:"none"}}> Principal</Link></Button >
+                    <Button> <Link to="/personajes" style={{textDecoration:"none"}}> Personajes </Link></Button >
+                    <Button> <Link to="/ubicaciones" style={{textDecoration:"none"}}> Ubicaciones </Link></Button >
+                    <Button> <Link to="/episodios" style={{textDecoration:"none"}}> Episodios </Link></Button >
                 </Box>                    
             </Box>
         </Container>
